@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+	float A, B, C, BC, AC,proizv;
+	cin >> A >> B >> C;
+	if (A >= C) {
+		AC = A - C;
+	}
+	else {
+		AC = C - A;
+	}
+	if (B >= C) {
+		BC = B - C;
+	}
+	else {
+		BC = C - B;
+	}
+	proizv = BC * AC;
+	cout << "proizvedenie=;" << proizv;
+	return 0;
+}
